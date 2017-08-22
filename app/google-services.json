@@ -1,0 +1,151 @@
+{
+  "project_info": {
+    "project_number": "592706829915",
+    "firebase_url": "https://gec-2017.firebaseio.com",
+    "project_id": "gec-2017",
+    "storage_bucket": "gec-2017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592706829915:android:24272b070b9bf33b",
+        "android_client_info": {
+          "package_name": "br.edu.infnet.android.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592706829915-sbobigg040dtrefn3ugonkc060q9brs8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.infnet.android.firebase",
+            "certificate_hash": "369c627617f7fe82f5571d1b82fc6ce814e3b81b"
+          }
+        },
+        {
+          "client_id": "592706829915-4m2hps1si92j48jkmsittkuhh4ii1abi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.infnet.android.firebase",
+            "certificate_hash": "8a8de0255ece7a65223009cbae4a90ec1c95e5c4"
+          }
+        },
+        {
+          "client_id": "592706829915-qsibpauul7ampp4gnvu5k932p3bkrjsa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjZncHpe0BSXnQTDDVpS_xJYqwINWMods"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592706829915-qsibpauul7ampp4gnvu5k932p3bkrjsa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592706829915:android:8b77dce1d0bbfb0d",
+        "android_client_info": {
+          "package_name": "br.edu.infnet.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592706829915-05dogl7dum2014fcg688urake256j1e0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.infnet.firebase",
+            "certificate_hash": "369c627617f7fe82f5571d1b82fc6ce814e3b81b"
+          }
+        },
+        {
+          "client_id": "592706829915-qsibpauul7ampp4gnvu5k932p3bkrjsa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjZncHpe0BSXnQTDDVpS_xJYqwINWMods"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592706829915-qsibpauul7ampp4gnvu5k932p3bkrjsa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592706829915:android:2cde1bf2aeb911b0",
+        "android_client_info": {
+          "package_name": "br.edu.infnet.firebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592706829915-tv62r9gbfgckivcuq9ptrru7alf7ut98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.infnet.firebaselogin",
+            "certificate_hash": "369c627617f7fe82f5571d1b82fc6ce814e3b81b"
+          }
+        },
+        {
+          "client_id": "592706829915-qsibpauul7ampp4gnvu5k932p3bkrjsa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjZncHpe0BSXnQTDDVpS_xJYqwINWMods"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592706829915-qsibpauul7ampp4gnvu5k932p3bkrjsa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
