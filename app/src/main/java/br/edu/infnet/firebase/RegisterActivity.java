@@ -29,15 +29,16 @@ public class RegisterActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_register);
 
-        //Get Firebase auth instance
+        //Pegamos a instancia do Firebase
         auth = FirebaseAuth.getInstance();
 
+        //variaveis de layout
         btnLogin = findViewById(R.id.login);
         btnSignUp = findViewById(R.id.sign_up);
         email = (TextInputLayout) findViewById(R.id.email_field);
         password = (TextInputLayout) findViewById(R.id.password_field);
 
-        //go to Login Activity
+        //futura tela de login
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,26 +48,26 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        //sign up a new account
+        //event para o botao de cadastro
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!Utils.hasText(email)) {
-                    Utils.showToast(RegisterActivity.this, "Entre com seu email");
-                } else if (!Utils.hasText(password)) {
-                    Utils.showToast(RegisterActivity.this, "Entre com sua senha");
+                if (!Utils.temTexto(email)) {
+                    Utils.mostraToast(RegisterActivity.this, "Entre com seu email");
+                } else if (!Utils.temTexto(password)) {
+                    Utils.mostraToast(RegisterActivity.this, "Entre com sua senha");
                 } else {
-                    //requesting Firebase server
+                    //indo para o firebase
                     showProcessDialog();
-                    auth.createUserWithEmailAndPassword(Utils.getText(email), Utils.getText(password))
+                    auth.createUserWithEmailAndPassword(Utils.pegaTexto(email), Utils.pegaTexto(password))
                             .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (!task.isSuccessful()) {
                                         progressDialog.dismiss();
-                                        Utils.showToast(RegisterActivity.this, "Erro no cadastro!");
+                                        Utils.mostraToast(RegisterActivity.this, "Erro no cadastro!");
                                     } else {
-                                        Utils.showToast(RegisterActivity.this, "Cadastrado com sucesso!");
+                                        Utils.mostraToast(RegisterActivity.this, "Cadastrado com sucesso!");
                                         startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                                         progressDialog.dismiss();
                                         finish();

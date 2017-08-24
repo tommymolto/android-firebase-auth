@@ -38,14 +38,14 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!Utils.hasText(emailField)) {
-                    Utils.showToast(LoginActivity.this, "Entre com seu email");
-                } else if (!Utils.hasText(passwordField)) {
-                    Utils.showToast(LoginActivity.this, "Entre com sua senha");
+                if (!Utils.temTexto(emailField)) {
+                    Utils.mostraToast(LoginActivity.this, "Entre com seu email");
+                } else if (!Utils.temTexto(passwordField)) {
+                    Utils.mostraToast(LoginActivity.this, "Entre com sua senha");
                 } else {
                     //requesting Firebase server
                     showProcessDialog();
-                    authenticateUser(Utils.getText(emailField), Utils.getText(passwordField));
+                    authenticateUser(Utils.pegaTexto(emailField), Utils.pegaTexto(passwordField));
                 }
             }
         });
@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         // When login failed
                         if (!task.isSuccessful()) {
-                            Utils.showToast(LoginActivity.this, "Erro no login!");
+                            Utils.mostraToast(LoginActivity.this, "Erro no login!");
                         } else {
                             //When login successful, redirect user to main activity
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
