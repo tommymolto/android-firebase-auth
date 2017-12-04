@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "592706829915-96gt505174jh26gmhujet0pmor0ll4a7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.infnet.android.firebase",
+            "certificate_hash": "3fdc410d79e77b56237f74835d32364fcbe973af"
+          }
+        },
+        {
           "client_id": "592706829915-sbobigg040dtrefn3ugonkc060q9brs8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -111,11 +119,71 @@
       },
       "oauth_client": [
         {
+          "client_id": "592706829915-p7ifn0gma0f2l7a1s885sg2g4o8k16gs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.infnet.firebaselogin",
+            "certificate_hash": "3fdc410d79e77b56237f74835d32364fcbe973af"
+          }
+        },
+        {
+          "client_id": "592706829915-2pfiv2ooohafsft3nk9otrdhm3eb3faf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.infnet.firebaselogin",
+            "certificate_hash": "8a8de0255ece7a65223009cbae4a90ec1c95e5c4"
+          }
+        },
+        {
           "client_id": "592706829915-tv62r9gbfgckivcuq9ptrru7alf7ut98.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "br.edu.infnet.firebaselogin",
             "certificate_hash": "369c627617f7fe82f5571d1b82fc6ce814e3b81b"
+          }
+        },
+        {
+          "client_id": "592706829915-qsibpauul7ampp4gnvu5k932p3bkrjsa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjZncHpe0BSXnQTDDVpS_xJYqwINWMods"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592706829915-qsibpauul7ampp4gnvu5k932p3bkrjsa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592706829915:android:fdc058d5ef95715c",
+        "android_client_info": {
+          "package_name": "br.edu.infnet.android.tp3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592706829915-rdpevbqus1a7prboav7iclil4lpmrdt8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.infnet.android.tp3",
+            "certificate_hash": "8a8de0255ece7a65223009cbae4a90ec1c95e5c4"
           }
         },
         {

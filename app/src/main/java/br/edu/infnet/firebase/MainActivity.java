@@ -33,8 +33,12 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
+    //listener de estado de login
     private FirebaseAuth.AuthStateListener authListener;
+    //obj de autenticacao firebase
     private FirebaseAuth auth;
+
+
     private ImageView imageView;
     private TextView email;
     private TextView name;
@@ -47,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
         botaoUpload = (Button) findViewById(R.id.sobeFoto);
         botaoUpload.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,30 +68,29 @@ public class MainActivity extends AppCompatActivity {
         userId = (TextView) findViewById(R.id.user_id);
         imageView = (ImageView) findViewById(R.id.user_photo);
 
-        //get firebase auth instance
+//validação de autenticaoa
         auth = FirebaseAuth.getInstance();
-
-        //get current user
+        //pega usuaruo atual
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         setDataToView(user);
 
-        //add a auth listener
         authListener = new FirebaseAuth.AuthStateListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                //se mudou status de usuario
                 Log.d("MainActivity", "onAuthStateChanged");
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
+                    //esta atutenticado esta de boa
                     setDataToView(user);
 
-                    //loading image by Picasso
                     if (user.getPhotoUrl() != null) {
                         Log.d("MainActivity", "photoURL: " + user.getPhotoUrl());
                         Picasso.with(MainActivity.this).load(user.getPhotoUrl()).into(imageView);
                     }
                 } else {
-                    //user auth state is not existed or closed, return to Login activity
+                    //nao esta logado, tem que ir para a tela de login
                     startActivity(new Intent(MainActivity.this, LoginActivity.class));
                     finish();
                 }
